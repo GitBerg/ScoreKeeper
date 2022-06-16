@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+   width: 500px;
+   height: 100vh;
+   flex-direction: column;
+   display: flex;
+   text-align: center;
+}
+
+#container img{
+    width: 500px;
+    height: 250px;
+}
+
+#container h1{
+    font-weight: 300;
+    border: 1px solid rgb(211, 211, 211);
+    white-space: nowrap;
+    padding: 0px 100px;
+    margin-top: 0px;
+    position: relative;
+}
+
+section{
+    border: 1px solid rgb(211, 211, 211);
+    border-top: none;
+    position: relative;
+    top:-4px;
+    padding-bottom: 10px ;
+}
+
+#scoreboard{
+    margin-left: 15px;
+    text-align: left; 
+    padding-top: 10px;
+}
+
+#scoreboard h2{
+    font-size: 2em;
+    margin-left: 15px;
+}
+
+#scoreboard p{
+    line-height: 2em;
+}
+
+#scoreboard label{
+    font-weight: 600;
+}
+
+.buttons{
+    padding: 20px 0;
+    display: grid;
+    grid: auto-flow dense/1fr 1fr 1fr;
+
+} 
+
+.buttons span{
+    border-radius: 5px;
+    padding: 10px;
+    grid-row: auto;
+    cursor: pointer;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: lavender;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.buttons #p1{
+    background-color: rgba(0, 161, 100, 0.555);
+    z-index: 2;
+    
+}
+
+.buttons #p2{
+    background-color: rgba(0, 57, 212, 0.555);
+}
+
+.buttons #reset{
+    background-color: rgba(212, 20, 46, 0.555);
+}
+
+.buttons #p1:hover{
+    background-color: rgba(0, 189, 116, 0.555);
+    
+}
+
+.buttons #p2:hover{
+    background-color: rgba(40, 97, 255, 0.555);
+}
+
+.buttons #reset:hover{
+    background-color: rgba(255, 23, 54, 0.555);
+}
+
+.winner{
+    color: rgba(0, 189, 116, 0.555);
+}
+
+.loser{
+    color:rgba(255, 23, 54, 0.555);
+}
+
+.disable{
+    pointer-events: none;
+}
+
+
+
+
+.custom-select{
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    width: 3rem;
+}
+
+.select-selected{
+    padding: 0.3rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    font-weight: 600;
+    font-size: 0.8rem;
+    box-shadow: 0px 0px 4px 1px  rgb(78, 78, 78);
+    cursor: pointer;
+}
+
+.select-list{
+    position: relative;
+    padding: 5px;
+    width: 3rem;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 4px 1px  rgb(78, 78, 78);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select-list li{
+    list-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .select-list li span{
+        list-style: none;
+        margin-left: 5px;
+        font-weight: 600;
+        pointer-events: none;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        }    
+
+.select-list li:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.show{
+    opacity: 1;
+    pointer-events: initial;
+    z-index: 3;
+}
+
+
